@@ -1,144 +1,1280 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>123</title>
+    <title>佈告欄</title>
     <!-- <link rel="shortcut icon" href="images/shortcut_icon.png" type="image/x-icon"> -->
     <script src="https://kit.fontawesome.com/d17564c281.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://vjs.zencdn.net/5-unsafe/video-js.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
     <!-- <link rel='stylesheet' href='css/bootstrap.css'> -->
-    <link rel='stylesheet' href='/Portfolio/css/main.css'>
+    <link rel='stylesheet' href='css/main.css'>
 </head>
 
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <span class="logo">B</span>
+            <a class="logo-expand" href="#">Bulletin</a>
+            <div class="side-wrapper">
+                <div class="side-title">MENU</div>
+                <div class="side-menu">
+                    <a class="sidebar-link discover is-active" id="bulletin">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512"  viewBox="0 0 512 512" fill="currentColor"><g><path d="m144 249h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m144 313h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m144 377h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m272 249h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m272 313h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m272 377h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m400 249h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m400 313h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m400 377h-32c-8.284 0-15 6.716-15 15s6.716 15 15 15h32c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m467 65h-36v-25c0-8.284-6.716-15-15-15s-15 6.716-15 15v25h-130v-25c0-8.284-6.716-15-15-15s-15 6.716-15 15v25h-130v-25c0-8.284-6.716-15-15-15s-15 6.716-15 15v25h-36c-24.813 0-45 20.187-45 45v332c0 24.813 20.187 45 45 45h422c24.813 0 45-20.187 45-45 0-9.682 0-323.575 0-332 0-24.813-20.187-45-45-45zm-437 45c0-8.271 6.729-15 15-15h36v25c0 8.284 6.716 15 15 15s15-6.716 15-15v-25h130v25c0 8.284 6.716 15 15 15s15-6.716 15-15v-25h130v25c0 8.284 6.716 15 15 15s15-6.716 15-15v-25h36c8.271 0 15 6.729 15 15v59h-452zm437 347h-422c-8.271 0-15-6.729-15-15v-243h452v243c0 8.271-6.729 15-15 15z"/></g></svg>
+                        <span>佈告欄</span>
+                    </a>
+                </div>
+            </div>
 
-<body class="body">
-  <p>我目前體重是 <em id="demo1"></em></p>
-  <p>我目前身高是 <em id="demo2"></em></p>
-  <p>我的身高+體重是 <em id="demo3"></em></p>
-<p></p>
-  <p>我來到一個餅攤，看到一個紅豆餅是<em id="cookiePriceId"></em>元</p>
-  <p>我發現我的口袋只剩下<em id="myMoneyId"></em>元</p>
-  <p>還差<em id="totalId"></em>元</p>
-  <p>五個紅豆餅等於<em id="fiveId"></em>元</p>
-  <p></p>
+            <div class="side-wrapper">
+                <div class="side-title">MEMBER</div>
+                <div class="side-menu">
+                    <a class="sidebar-link showed" id="info">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve" fill="currentColor">
+                            <g>
+                                <g>
+                                    <path d="M256,0c-74.439,0-135,60.561-135,135s60.561,135,135,135s135-60.561,135-135S330.439,0,256,0z M256,240    c-57.897,0-105-47.103-105-105c0-57.897,47.103-105,105-105c57.897,0,105,47.103,105,105C361,192.897,313.897,240,256,240z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M423.966,358.195C387.006,320.667,338.009,300,286,300h-60c-52.008,0-101.006,20.667-137.966,58.195    C51.255,395.539,31,444.833,31,497c0,8.284,6.716,15,15,15h420c8.284,0,15-6.716,15-15    C481,444.833,460.745,395.539,423.966,358.195z M61.66,482c7.515-85.086,78.351-152,164.34-152h60    c85.989,0,156.825,66.914,164.34,152H61.66z"/>
+                                </g>
+                            </g>
+                        </svg>
+                        <span>個人資料</span>
+                    </a>
 
-  <div class="wrap">
-    <div class="wrap-inner">
-        <h1>六角西餐廳 - 壽星折扣篇</h1>
-        <p>服務生：Hello，請問您是本月壽星嗎？</p>
-        <p>　顧客：<em class="tag" id="birthdayId"></em></p>
-        <p>服務生：請問人還沒到齊對嗎？看預約名單您是預定兩個位置</p>
-        <p>　顧客：<em class="tag" id="peopleId"></em></p>
+                    <a class="sidebar-link" id="members">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512"  xml:space="preserve" fill="currentColor">
+                            <g>
+                                <g>
+                                    <path d="M492,236H144.262c-11.046,0-20,8.954-20,20s8.954,20,20,20H492c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z
+                                        "/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M492,86H144.262c-11.046,0-20,8.954-20,20s8.954,20,20,20H492c11.046,0,20-8.954,20-20S503.046,86,492,86z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M492,386H144.262c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20H492c11.046,0,20-8.954,20-20
+                                        C512,394.954,503.046,386,492,386z"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <circle cx="27" cy="106" r="27"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <circle cx="27" cy="256" r="27"/>
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <circle cx="27" cy="406" r="27"/>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <span>會員列表</span>
+                    </a>
+
+                    <a class="sidebar-link" id="group">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" viewBox="0 0 512 512" fill="currentColor"><g><path d="m256 207c47.972 0 87-39.028 87-87s-39.028-87-87-87-87 39.028-87 87 39.028 87 87 87zm0-144c31.43 0 57 25.57 57 57s-25.57 57-57 57-57-25.57-57-57 25.57-57 57-57z"/><path d="m432 207c30.327 0 55-24.673 55-55s-24.673-55-55-55-55 24.673-55 55 24.673 55 55 55zm0-80c13.785 0 25 11.215 25 25s-11.215 25-25 25-25-11.215-25-25 11.215-25 25-25z"/><path d="m444.1 241h-23.2c-27.339 0-50.939 16.152-61.693 39.352-22.141-24.17-53.944-39.352-89.228-39.352h-27.957c-35.284 0-67.087 15.182-89.228 39.352-10.755-23.2-34.355-39.352-61.694-39.352h-23.2c-37.44 0-67.9 30.276-67.9 67.49v109.21c0 16.156 13.194 29.3 29.412 29.3h91.727c1.538 17.9 16.59 32 34.883 32h199.957c18.292 0 33.344-14.1 34.883-32h90.679c16.796 0 30.46-13.61 30.46-30.34v-108.17c-.001-37.214-30.461-67.49-67.901-67.49zm-414.1 67.49c0-20.672 17.002-37.49 37.9-37.49h23.2c20.898 0 37.9 16.818 37.9 37.49v10.271c-10.087 26.264-8 42.004-8 98.239h-91zm331 135.489c0 2.769-2.252 5.021-5.021 5.021h-199.958c-2.769 0-5.021-2.253-5.021-5.021v-81.957c0-50.19 40.832-91.022 91.021-91.022h27.957c50.19 0 91.022 40.832 91.022 91.021zm121-27.319c0 .517 5.592.34-91 .34 0-56.651 2.071-72.018-8-98.239v-10.271c0-20.672 17.002-37.49 37.9-37.49h23.2c20.898 0 37.9 16.818 37.9 37.49z"/><path d="m80 207c30.327 0 55-24.673 55-55s-24.673-55-55-55-55 24.673-55 55 24.673 55 55 55zm0-80c13.785 0 25 11.215 25 25s-11.215 25-25 25-25-11.215-25-25 11.215-25 25-25z"/></g></svg>
+                        <span>會員群組</span>
+                    </a>
+
+                    <a class="sidebar-link" id="authority">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="_x31__x2C_5" viewBox="0 0 24 24" fill="currentColor"><path d="m18.75 24h-13.5c-1.24 0-2.25-1.009-2.25-2.25v-10.5c0-1.241 1.01-2.25 2.25-2.25h13.5c1.24 0 2.25 1.009 2.25 2.25v10.5c0 1.241-1.01 2.25-2.25 2.25zm-13.5-13.5c-.413 0-.75.336-.75.75v10.5c0 .414.337.75.75.75h13.5c.413 0 .75-.336.75-.75v-10.5c0-.414-.337-.75-.75-.75z"/><path d="m17.25 10.5c-.414 0-.75-.336-.75-.75v-3.75c0-2.481-2.019-4.5-4.5-4.5s-4.5 2.019-4.5 4.5v3.75c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-3.75c0-3.309 2.691-6 6-6s6 2.691 6 6v3.75c0 .414-.336.75-.75.75z"/><path d="m12 17c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zm0-2.5c-.275 0-.5.224-.5.5s.225.5.5.5.5-.224.5-.5-.225-.5-.5-.5z"/><path d="m12 20c-.414 0-.75-.336-.75-.75v-2.75c0-.414.336-.75.75-.75s.75.336.75.75v2.75c0 .414-.336.75-.75.75z"/>
+                        </svg>
+                        <span>權限管理</span>
+                    </a>
+                </div>
+
+                <div class="side-wrapper singout">
+                    <div class="side-menu">
+                        <a class="sidebar-link singout-link" href="login.html">
+                            <svg fill="currentColor" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+                                <g id="XMLID_2_">
+                                    <path id="XMLID_4_" d="M51.213,180h173.785c8.284,0,15-6.716,15-15s-6.716-15-15-15H51.213l19.394-19.393   c5.858-5.857,5.858-15.355,0-21.213c-5.856-5.858-15.354-5.858-21.213,0L4.397,154.391c-0.348,0.347-0.676,0.71-0.988,1.09   c-0.076,0.093-0.141,0.193-0.215,0.288c-0.229,0.291-0.454,0.583-0.66,0.891c-0.06,0.09-0.109,0.185-0.168,0.276   c-0.206,0.322-0.408,0.647-0.59,0.986c-0.035,0.067-0.064,0.138-0.099,0.205c-0.189,0.367-0.371,0.739-0.53,1.123   c-0.02,0.047-0.034,0.097-0.053,0.145c-0.163,0.404-0.314,0.813-0.442,1.234c-0.017,0.053-0.026,0.108-0.041,0.162   c-0.121,0.413-0.232,0.83-0.317,1.257c-0.025,0.127-0.036,0.258-0.059,0.386c-0.062,0.354-0.124,0.708-0.159,1.069   C0.025,163.998,0,164.498,0,165s0.025,1.002,0.076,1.498c0.035,0.366,0.099,0.723,0.16,1.08c0.022,0.124,0.033,0.251,0.058,0.374   c0.086,0.431,0.196,0.852,0.318,1.269c0.015,0.049,0.024,0.101,0.039,0.15c0.129,0.423,0.28,0.836,0.445,1.244   c0.018,0.044,0.031,0.091,0.05,0.135c0.16,0.387,0.343,0.761,0.534,1.13c0.033,0.065,0.061,0.133,0.095,0.198   c0.184,0.341,0.387,0.669,0.596,0.994c0.056,0.088,0.104,0.181,0.162,0.267c0.207,0.309,0.434,0.603,0.662,0.895   c0.073,0.094,0.138,0.193,0.213,0.285c0.313,0.379,0.641,0.743,0.988,1.09l44.997,44.997C52.322,223.536,56.161,225,60,225   s7.678-1.464,10.606-4.394c5.858-5.858,5.858-15.355,0-21.213L51.213,180z"/>
+                                    <path id="XMLID_5_" d="M207.299,42.299c-40.944,0-79.038,20.312-101.903,54.333c-4.62,6.875-2.792,16.195,4.083,20.816   c6.876,4.62,16.195,2.794,20.817-4.083c17.281-25.715,46.067-41.067,77.003-41.067C258.414,72.299,300,113.884,300,165   s-41.586,92.701-92.701,92.701c-30.845,0-59.584-15.283-76.878-40.881c-4.639-6.865-13.961-8.669-20.827-4.032   c-6.864,4.638-8.67,13.962-4.032,20.826c22.881,33.868,60.913,54.087,101.737,54.087C274.956,287.701,330,232.658,330,165   S274.956,42.299,207.299,42.299z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button>
+                        <img src="data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56.966 56.966' fill='%23717790c7'%3e%3cpath d='M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z'/%3e%3c/svg%3e" alt="">
+                    </button>
+                </div>
+                <div class="flatpickr-input-body">
+                    <div class="flatpickr-icon">
+                        <img src="https://img.icons8.com/material/20/353340/calendar.png"/>
+                    </div>   
+                    <input class="flatpickr flatpickr-input active" type="date" placeholder="選擇日期。" readonly="readonly">
+                </div>    
+                <div class="user-settings">
+                    <img class="user-img" src="images/profile.png" alt="">
+                    <div class="user-name">admin</div>
+                    <svg viewBox="0 0 492 492" fill="currentColor">
+                        <path d="M484.13 124.99l-16.11-16.23a26.72 26.72 0 00-19.04-7.86c-7.2 0-13.96 2.79-19.03 7.86L246.1 292.6 62.06 108.55c-5.07-5.06-11.82-7.85-19.03-7.85s-13.97 2.79-19.04 7.85L7.87 124.68a26.94 26.94 0 000 38.06l219.14 219.93c5.06 5.06 11.81 8.63 19.08 8.63h.09c7.2 0 13.96-3.57 19.02-8.63l218.93-219.33A27.18 27.18 0 00492 144.1c0-7.2-2.8-14.06-7.87-19.12z"></path>
+                    </svg>
+                    <div class="dropdown" style="display: none;">
+                        <ul>
+                            <li id="top-menu-info"><a class="showed"><img src="https://img.icons8.com/fluent-systems-regular/15/ffffff/edit-user.png"/>個人資料</a></li>
+                            <li><a href="login.html"><img src="https://img.icons8.com/fluent-systems-filled/15/ffffff/login-rounded-right.png"/>登出</a></li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+
+            
+            <div class="main-container">
+                <div class="main-body main-blogs bulletin">
+                    <div class="main-header anim" style="animation-delay: 0s;">News
+                        <div class="button-group">
+                            <button class="add md-trigger" data-modal="modal-5" type="button" ><img src="https://img.icons8.com/ios-filled/18/ffffff/plus-math.png"/></button>
+                            <button class="onoff" type="button"><img src="https://img.icons8.com/metro/18/ffffff/switch-off.png"/></button>
+                            <button class="del" type="button" onclick="open_modal1()"><img src="https://img.icons8.com/fluent-systems-regular/18/ffffff/trash--v2.png"/></button>
+                        </div>    
+                        <div class="main-change-page">
+                            <a href=""><img src="https://img.icons8.com/material-rounded/24/000000/back--v1.png"></a>
+                            <span>01</span> 
+                            <a href=""><img src="https://img.icons8.com/material-rounded/24/000000/forward.png"></a>
+                        </div>
+                    </div>
+                    <div class="main-blog anim" >
+                        <input type="checkbox">
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img" src="images/megaphone.png" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">admin</div>
+                                <div class="author-info">53 views </div>
+                            </div>
+                        </div>
+                        <div class="main-blog__title"><a href="#">最新公告最新公告最新公告最新公告最新公告最新公告</a></div>
+                        <div class="main-blog__time">2020/01/06</div>
+                        <div class="main-blog__sort"><img src="https://img.icons8.com/windows/15/0daabc/sort-numeric-up.png"/><span>99</span></div>
+                    </div>
+
+                    <div class="main-blog anim off">
+                        <input type="checkbox">
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img" src="images/megaphone.png" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">管理員</div>
+                                <div class="author-info">12 views </div>
+                            </div>
+                        </div>
+                        <div class="main-blog__title"><a href="#">最新公告最新公告最新公告最新公告最新公告最新公告最新公告最新公告最新公告最新公告</a></div>
+                        <div class="main-blog__time">2020/01/06</div>
+                        <div class="main-blog__sort"><img src="https://img.icons8.com/windows/15/0daabc/sort-numeric-up.png"/><span>98</span></div>
+                    </div>
+
+                    <div class="main-blog anim off">
+                        <input type="checkbox">
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img" src="images/megaphone.png" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">boss</div>
+                                <div class="author-info">3 views </div>
+                            </div>
+                        </div>
+                        <div class="main-blog__title"><a href="#">最新公告最新公告最新公告最新公告最新公告最新公告</a></div>
+                        <div class="main-blog__time">2020/01/06</div>
+                        <div class="main-blog__sort"><img src="https://img.icons8.com/windows/15/0daabc/sort-numeric-up.png"/><span>97</span></div>
+                    </div>
+
+                    <div class="main-blog anim">
+                        <input type="checkbox">
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img" src="images/megaphone.png" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">work</div>
+                                <div class="author-info">3 views </div>
+                            </div>
+                        </div>
+                        <div class="main-blog__title"><a href="#">最新公告最新公告最新公告最新公告最新公告最新公告</a></div>
+                        <div class="main-blog__time">2020/01/06</div>
+                    </div>
+
+                    <div class="main-blog anim">
+                        <input type="checkbox">
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img" src="images/megaphone.png" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">系統管理者</div>
+                                <div class="author-info">3 views </div>
+                            </div>
+                        </div>
+                        <div class="main-blog__title"><a href="#">最新公告最新公告最新公告最新公告最新公告</a></div>
+                        <div class="main-blog__time">2020/01/06</div>
+                    </div>
+
+                    <div class="main-blog anim">
+                        <input type="checkbox">
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img" src="images/megaphone.png" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">wen</div>
+                                <div class="author-info">3 views </div>
+                            </div>
+                        </div>
+                        <div class="main-blog__title"><a href="#">最新公告最新公告最新公告最新公告最新公告最新公告</a></div>
+                        <div class="main-blog__time">2020/01/06</div>
+                    </div>
+
+                    <div class="main-blog anim">
+                        <input type="checkbox">
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img" src="images/megaphone.png" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">chang</div>
+                                <div class="author-info">3 views </div>
+                            </div>
+                        </div>
+                        <div class="main-blog__title"><a href="#">最新公告最新公告最新公告最新公告最新公告最新公告</a></div>
+                        <div class="main-blog__time">2020/01/06</div>
+                    </div>
+
+                    <div class="main-blog anim">
+                        <input type="checkbox">
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img" src="images/megaphone.png" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">wu</div>
+                                <div class="author-info">3 views </div>
+                            </div>
+                        </div>
+                        <div class="main-blog__title"><a href="#">最新公告最新公告最新公告最新公告最新公告最新公告</a></div>
+                        <div class="main-blog__time">2020/01/06</div>
+                    </div>
+
+                    <div class="main-blog anim">
+                        <input type="checkbox">
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img" src="images/megaphone.png" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">hou</div>
+                                <div class="author-info">3 views </div>
+                            </div>
+                        </div>
+                        <div class="main-blog__title"><a href="#">最新公告最新公告最新公告最新公告最新公告最新公告</a></div>
+                        <div class="main-blog__time">2020/01/06</div>
+                    </div>      
+                    
+                    <div class="main-blog anim">
+                        <input type="checkbox">
+                        <div class="main-blog__author">
+                            <div class="author-img__wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <img class="author-img" src="images/megaphone.png" />
+                            </div>
+                            <div class="author-detail">
+                                <div class="author-name">hou</div>
+                                <div class="author-info">3 views </div>
+                            </div>
+                        </div>
+                        <div class="main-blog__title"><a href="#">最新公告最新公告最新公告最新公告最新公告最新公告</a></div>
+                        <div class="main-blog__time">2020/01/06</div>
+                    </div> 
+                </div>
+              
+                
+                <div class="main-body member-area info">
+                    <div class="main-header anim" style="animation-delay: 0s;">個人資料</div>
+                    <div class="member-content">
+                        <div class="member-card">
+                            <div class="member-wrapper anim"  style="animation-delay: 0.1s;">
+                                <img  src="images/profile.png">
+                                <div class="info">
+                                    <small>帳號 Account</small>
+                                    <p>0921201168</p>
+                                </div>
+                            </div>
+                            <button class="anim" type="button" onclick="open_modal2()" style="animation-delay: 0.2s;">儲存</button>
+                        </div>
+                        
+                        <div class="member-input">
+                            <div class="member anim" style="animation-delay: 0.3s;" >
+                                <label for="">姓名 Name</label>
+                                <input type="text" value="一般使用者" disabled>
+                            </div>
+                            <div class="member anim"  style="animation-delay: 0.4s;">
+                                <label for="">密碼 Password</label>
+                                <input type="password" value="123456789" >
+                            </div>
+                        
+                            <div class="member anim" style="animation-delay: 0.5s;">
+                                <label for="">信箱 Mail</label>
+                                <input type="mail" value="a123456@gmail.com" disabled>
+                            </div>
+
+                            <div class="member anim" style="animation-delay: 0.6s;">
+                                <label for="">備註 Mail</label>
+                                <textarea name="" id="" cols="30" rows="5" disabled>Hello</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="main-body member-area members">
+                    <div class="main-header anim" style="animation-delay: 0s;">會員列表
+                        <div class="button-group md-trigger" data-modal="modal-1">
+                            <button class="add" ><img src="https://img.icons8.com/ios-filled/18/ffffff/plus-math.png"></button>
+                        </div>
+                    </div>
+                    <div class="members-content">
+                        <div class="members-card anim">
+                            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 100%;">
+                                <span class="badge badge-soft-danger">High</span>
+                                <div class="members-card-header">
+                                    <h6>系</h6>
+                                    <div class="members-card-lv">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="members-card-name">系統管理員</div>
+                                <div class="members-card-account">0919476628</div>
+                                <div class="members-card-dot md-trigger" data-modal="modal-4">
+                                    <button class="members-card-edit"></button> 
+                                </div>    
+                                <button class="members-card-del" onclick="open_modal1()">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/18/353340/trash--v2.png"/>
+                                </button>   
+                            </div>    
+                        </div>  
+                        <div class="members-card anim">
+                            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 100%;">
+                                <span class="badge badge-soft-danger">High</span>
+                                <div class="members-card-header">
+                                    <h6>H</h6>
+                                    <div class="members-card-lv">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="members-card-name">Hou You</div>
+                                <div class="members-card-account">0921201162</div>
+                                <div class="members-card-dot md-trigger" data-modal="modal-4">
+                                    <button class="members-card-edit"></button> 
+                                </div> 
+                                <button class="members-card-del" onclick="open_modal1()">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/18/353340/trash--v2.png"/>
+                                </button>   
+                            </div>
+                        </div> 
+                        <div class="members-card anim">
+                            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 100%;">
+                                <div class="members-card-header">
+                                    <h6>W</h6>
+                                </div>
+                                <div class="members-card-name">Wu</div>
+                                <div class="members-card-account">0921201161</div>
+                                <div class="members-card-dot md-trigger" data-modal="modal-4">
+                                    <button class="members-card-edit"></button> 
+                                </div>  
+                                <button class="members-card-del" onclick="open_modal1()">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/18/353340/trash--v2.png"/>
+                                </button>   
+                            </div>
+                        </div> 
+                        <div class="members-card anim">
+                            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 100%;">
+                                <div class="members-card-header">
+                                    <h6>H</h6>
+                                </div>
+                                <div class="members-card-name">Hang</div>
+                                <div class="members-card-account">0921206962</div>
+                                <div class="members-card-dot md-trigger" data-modal="modal-4">
+                                    <button class="members-card-edit"></button> 
+                                </div> 
+                                <button class="members-card-del" onclick="open_modal1()">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/18/353340/trash--v2.png"/>
+                                </button>   
+                            </div>
+                        </div> 
+
+                        <div class="members-card anim">
+                            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 100%;">
+                                <div class="members-card-header">
+                                    <h6>J</h6>
+                                </div>
+                                <div class="members-card-name">Jennt</div>
+                                <div class="members-card-account">0929806962</div>
+                                <div class="members-card-dot md-trigger" data-modal="modal-4">
+                                    <button class="members-card-edit"></button> 
+                                </div>  
+                                <button class="members-card-del" onclick="open_modal1()">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/18/353340/trash--v2.png"/>
+                                </button>   
+                            </div>
+                        </div> 
+
+                        <div class="members-card anim">
+                            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 100%;">
+                                <div class="members-card-header">
+                                    <h6>W</h6>
+                                </div>
+                                <div class="members-card-name">Wenny</div>
+                                <div class="members-card-account">0929806962</div>
+                                <div class="members-card-dot md-trigger" data-modal="modal-4">
+                                    <button class="members-card-edit"></button> 
+                                </div>  
+                                <button class="members-card-del" onclick="open_modal1()">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/18/353340/trash--v2.png"/>
+                                </button>   
+                            </div>
+                        </div> 
+
+                        <div class="members-card anim">
+                            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 100%;">
+                                <div class="members-card-header">
+                                    <h6>L</h6>
+                                </div>
+                                <div class="members-card-name">Leo</div>
+                                <div class="members-card-account">0929806962</div>
+                                <div class="members-card-dot md-trigger" data-modal="modal-4">
+                                    <button class="members-card-edit"></button> 
+                                </div>  
+                                <button class="members-card-del" onclick="open_modal1()">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/18/353340/trash--v2.png"/>
+                                </button>   
+                            </div>
+                        </div> 
+
+                        <div class="members-card anim">
+                            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 100%;">
+                                <div class="members-card-header">
+                                    <h6>K</h6>
+                                </div>
+                                <div class="members-card-name">Kelly</div>
+                                <div class="members-card-account">0929806962</div>
+                                <div class="members-card-dot md-trigger" data-modal="modal-4">
+                                    <button class="members-card-edit"></button> 
+                                </div>  
+                                <button class="members-card-del" onclick="open_modal1()">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/18/353340/trash--v2.png"/>
+                                </button>   
+                            </div>
+                        </div> 
+
+                        <div class="members-card anim">
+                            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;width: 100%;">
+                                <div class="members-card-header">
+                                    <h6>N</h6>
+                                </div>
+                                <div class="members-card-name">Nono</div>
+                                <div class="members-card-account">0929806962</div>
+                                <div class="members-card-dot md-trigger" data-modal="modal-4">
+                                    <button class="members-card-edit"></button> 
+                                </div>  
+                                <button class="members-card-del" onclick="open_modal1()">
+                                    <img src="https://img.icons8.com/fluent-systems-regular/18/353340/trash--v2.png"/>
+                                </button>   
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="main-body newsContent-area content" >
+                    <div class="main-header newsContent-title anim" style="animation-delay: 0.2s;">
+                        <div class="button-group md-trigger" data-modal="modal-6">
+                            <button class="edit" ><img src="https://img.icons8.com/fluent-systems-regular/18/ffffff/edit--v1.png"/></button>
+                        </div>
+                        <div class="newsContent-title-text">
+                            <h3>最新消息最新消息最新消息最新消息最新消息</h3>
+                            <small>內容簡述內內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述
+                                容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述</small>
+                            <div class="newsContent-title-time">2020/01/06</div>
+                        </div>    
+                        <img style="animation-delay: 0.1s;" src="images/flame.png" alt="">
+                    </div>
+                    <div class="newsContent-main anim" style="animation-delay: 0.3s;">
+                        詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內
+                    </div>
+                    <div class="newsContent-bottom anim" style="animation-delay: 0.4s;">From: 系統管理員</div>
+                </div>
+
+                <div class="main-body newsContent-area content" >
+                    <div class="main-header newsContent-title anim" style="animation-delay: 0.2s;">
+                        <div class="newsContent-title-text">
+                            <h3>最新消息最新消息最新消息最新消息最新消息最新消息最新消息</h3>
+                            <small>內容簡述內內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述
+                                容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述</small>
+                            <div class="newsContent-title-time">2020/01/06</div>
+                        </div>    
+                        <img style="animation-delay: 0.1s;" src="images/flame.png" alt="">
+                    </div>
+                    <div class="newsContent-main anim" style="animation-delay: 0.3s;">
+                        詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內容詳細內
+                    </div>
+                    <div class="newsContent-bottom anim" style="animation-delay: 0.4s;">From: 系統管理員</div>
+                </div>
+                
+ 
+                
+
+
+                <div class="main-body member-area group">
+                    <div class="main-header anim" style="animation-delay: 0s;">會員群組
+                        <div class="button-group md-trigger" data-modal="modal-2">
+                            <button class="add" ><img src="https://img.icons8.com/ios-filled/18/ffffff/plus-math.png"></button>
+                        </div>
+                    </div>
+                    <div class="group-content">
+                        <div class="group-card anim">
+                            <div class="checkbox">
+                                <input type="checkbox" checked>
+                                <label></label>
+                                <div class="group-name"><img src="https://img.icons8.com/fluent-systems-regular/20/808191/badge.png"/>S群組名稱<span>(20)</span></div>
+                            </div>
+                            <a class="group-edit">
+                                <img src="https://img.icons8.com/fluent-systems-regular/15/ffffff/edit-user.png"/>
+                            </a>
+                        </div>  
+                        <div class="group-card anim">
+                            <div class="checkbox">
+                                <input type="checkbox">
+                                <label></label>
+                                <div class="group-name"><img src="https://img.icons8.com/fluent-systems-regular/20/808191/badge.png"/>A群組<span>(05)</span></div>
+                            </div>
+                            <a class="group-edit">
+                                <img src="https://img.icons8.com/fluent-systems-regular/15/ffffff/edit-user.png"/>
+                            </a>
+                        </div>    
+                        <div class="group-card anim">
+                            <div class="checkbox">
+                                <input type="checkbox" checked>
+                                <label></label>
+                                <div class="group-name"><img src="https://img.icons8.com/fluent-systems-regular/20/808191/badge.png"/>B群組<span>(19)</span></div>
+                            </div>
+                            <a class="group-edit">
+                                <img src="https://img.icons8.com/fluent-systems-regular/15/ffffff/edit-user.png"/>
+                            </a>
+                        </div>    
+                        <div class="group-card anim">
+                            <div class="checkbox">
+                                <input type="checkbox">
+                                <label></label>
+                                <div class="group-name"><img src="https://img.icons8.com/fluent-systems-regular/20/808191/badge.png"/>C群組<span>(03)</span></div>
+                            </div>
+                            <a class="group-edit">
+                                <img src="https://img.icons8.com/fluent-systems-regular/15/ffffff/edit-user.png"/>
+                            </a>
+                        </div>      
+                        <div class="group-card anim">
+                            <div class="checkbox">
+                                <input type="checkbox">
+                                <label></label>
+                                <div class="group-name"><img src="https://img.icons8.com/fluent-systems-regular/20/808191/badge.png"/>D群組<span>(19)</span></div>
+                            </div>
+                            <a class="group-edit">
+                                <img src="https://img.icons8.com/fluent-systems-regular/15/ffffff/edit-user.png"/>
+                            </a>
+                        </div>    
+                        <div class="group-card anim">
+                            <div class="checkbox">
+                                <input type="checkbox">
+                                <label></label>
+                                <div class="group-name"><img src="https://img.icons8.com/fluent-systems-regular/20/808191/badge.png"/>E群組<span>(03)</span></div>
+                            </div>
+                            <a class="group-edit">
+                                <img src="https://img.icons8.com/fluent-systems-regular/15/ffffff/edit-user.png"/>
+                            </a>
+                        </div>      
+                    </div>
+                </div>
+
+
+
+
+                <div class="main-body groupEdit-area groupEditBody">
+                    <div class="main-header anim" style="animation-delay: 0s;">新增會員
+                        <div class="button-group">
+                            <button class="add" onclick="open_modal2()"><img src="https://img.icons8.com/material-rounded/18/ffffff/checkmark.png"/></button>
+                        </div>
+                    </div>
+                    <div class="groupEditContent-main">
+                        <div class="groupEditTitle anim" style="animation-delay: 0.1s;"><img src="https://img.icons8.com/material-outlined/20/808191/checked--v1.png"/>已選擇</div>
+                        <div class="groupEditCardBody anim" style="animation-delay: 0.2s;">
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox" checked>
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox" checked>
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox" checked>
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox" checked>
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="groupEditTitle anim" style="animation-delay: 0.3s;"><img src="https://img.icons8.com/material-outlined/20/808191/checked--v2.png"/>未選擇</div>
+                        <div class="groupEditCardBody anim" style="animation-delay: 0.4s;">
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                            <div class="groupEditCard">
+                                <div class="groupEditName">
+                                    <input type="checkbox">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                
+                
+
+
+
+                <div class="main-body member-area authority">
+                    <div class="main-header anim" style="animation-delay: 0s;">權限管理
+                        <div class="button-group md-trigger" data-modal="modal-3">
+                            <button class="add" type="button"><img src="https://img.icons8.com/ios-filled/18/ffffff/plus-math.png"></button>
+                        </div>
+                    </div>
+                    <div class="authority-content">
+                        <div class="authority-card anim">
+                            <h5>系統管理者
+                                <span class="font-size-15">(3)</span>
+                                <span class="badge badge-soft-danger" style="position: relative; top: 0; left: 2px;">High</span>
+                                <button class="authority-btn" type="button">權限</button>
+                            </h5>
+                            <div class="authority-body">
+                                <div style="display: flex; align-items: center; justify-content: space-between">
+                                    <h6>系統管理員 ｜ 0919476628</h6>
+                                    <button class="del" onclick="open_modal1()">
+                                        <img src="https://img.icons8.com/fluent-systems-regular/15/353340/trash--v2.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="authority-body">
+                                <div style="display: flex; align-items: center; justify-content: space-between">
+                                    <h6>系統管理員2 ｜ 0921201161</h6>
+                                    <button class="del" onclick="open_modal1()">
+                                        <img src="https://img.icons8.com/fluent-systems-regular/15/353340/trash--v2.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="authority-body">
+                                <div style="display: flex; align-items: center; justify-content: space-between">
+                                    <h6>系統管理員3 ｜ 0912989798</h6>
+                                    <button class="del" onclick="open_modal1()">
+                                        <img src="https://img.icons8.com/fluent-systems-regular/15/353340/trash--v2.png">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="authority-card anim">
+                            <h5>一般使用者
+                                <span class="font-size-15">(6)</span>
+                                <span class="badge badge-soft-success" style="position: relative; top: 0; left: 2px;">Low</span>
+                                <button class="authority-btn" type="button">權限</button>
+                            </h5>
+                            <div class="authority-body">
+                                <div style="display: flex; align-items: center; justify-content: space-between">
+                                    <h6>Tree ｜ 0919476628</h6>
+                                    <button class="del" onclick="open_modal1()">
+                                        <img src="https://img.icons8.com/fluent-systems-regular/15/353340/trash--v2.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="authority-body">
+                                <div style="display: flex; align-items: center; justify-content: space-between">
+                                    <h6>Yooni ｜ 0921201161</h6>
+                                    <button class="del" onclick="open_modal1()">
+                                        <img src="https://img.icons8.com/fluent-systems-regular/15/353340/trash--v2.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="authority-body">
+                                <div style="display: flex; align-items: center; justify-content: space-between">
+                                    <h6>Jenny ｜ 0912989798</h6>
+                                    <button class="del" onclick="open_modal1()">
+                                        <img src="https://img.icons8.com/fluent-systems-regular/15/353340/trash--v2.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="authority-body">
+                                <div style="display: flex; align-items: center; justify-content: space-between">
+                                    <h6>User ｜ 0912989798</h6>
+                                    <button class="del" onclick="open_modal1()">
+                                        <img src="https://img.icons8.com/fluent-systems-regular/15/353340/trash--v2.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="authority-body">
+                                <div style="display: flex; align-items: center; justify-content: space-between">
+                                    <h6>Cat ｜ 0912989798</h6>
+                                    <button class="del" onclick="open_modal1()">
+                                        <img src="https://img.icons8.com/fluent-systems-regular/15/353340/trash--v2.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="authority-body">
+                                <div style="display: flex; align-items: center; justify-content: space-between">
+                                    <h6>Dog ｜ 0912989798</h6>
+                                    <button class="del" onclick="open_modal1()">
+                                        <img src="https://img.icons8.com/fluent-systems-regular/15/353340/trash--v2.png">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="main-body member-area authoritySetup">
+                    <div class="main-header anim" style="animation-delay: 0s;">權限管理
+                        <div class="button-group">
+                            <button class="add" onclick="open_modal2()"><img src="https://img.icons8.com/material-rounded/18/ffffff/checkmark.png"/></button>
+                        </div>
+                    </div>
+                    <div class="authority-content anim" style="animation-delay: 0.1s;">
+                        <div class="authority-set-card">
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn active">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn active">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn active">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn active">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn active">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn active">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn active">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox"  checked class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-body member-area authoritySetup">
+                    <div class="main-header anim" style="animation-delay: 0s;">權限管理</div>
+                    <div class="authority-content anim" style="animation-delay: 0.1s;">
+                        <div class="authority-set-card">
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                            <div class="authority-item">
+                                <p>權限管理</p>
+                                <div class="toggle-btn">
+                                    <input type="checkbox" class="cb-value" />
+                                    <span class="round-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <footer class="footer-lg">© JHONG Creativity. All rights reserved. | Design by JHONG</footer>
 
-  <div class="wrap">
-    <div class="wrap-inner">
-        <h1>六角西餐廳 - 贈品篇</h1>
-        <p>服務生：請問你是 VIP 嗎？帳單有滿千嗎？兩者達到可送贈品哦！</p>
-        <p>　顧客：<em class="tag" id="andId"></em></p>
-        <p>服務生：抱歉我記錯了，只要一個有達到就送贈品嘍，你有嗎？</p>
-        <p>　顧客：<em class="tag" id="orId"></em></p>
+
+
+    
+    <div class="md-modal md-effect-1" id="modal-1">
+        <div class="md-content">
+            <h5>新增會員
+                <button class="md-close"><img src="https://img.icons8.com/ios-filled/14/353340/delete-sign--v2.png"/></button>
+            </h5>
+            <div class="md-content-body">
+                <div class="member-input">
+                    <div class="member">
+                        <label for="">姓名 Name</label>
+                        <input type="text" value="一般使用者">
+                    </div>
+                    <div class="member">
+                        <label for="">密碼 Password</label>
+                        <input type="password" value="123456789">
+                    </div>
+                
+                    <div class="member">
+                        <label for="">信箱 Mail</label>
+                        <input type="mail" value="a123456@gmail.com">
+                    </div>
+
+                    <div class="member">
+                        <label for="">備註 Mail</label>
+                        <textarea name="" id="" cols="30" rows="4">Hello</textarea>
+                    </div>
+                    <div class="saveBtn-bg">
+                        <button class="saveBtn" type="button" onclick="open_modal2()" style="animation-delay: 0.2s;">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <h1 id="demo123" class="titelClass"><em>1234</em></h1>
-
-  <h2 class="quClass"><em></em></h2>
-  <h2 class="quClass"><em></em></h2>
-
-  <h3 class="titleClass">
-    <a href="#">title</a>
-  </h3>
-
-  <div class="str">hello</div>
 
 
-  <div id="main">HELLO</div>
+    <div class="md-modal md-effect-1" id="modal-2">
+        <div class="md-content">
+            <h5>新增群組
+                <button class="md-close"><img src="https://img.icons8.com/ios-filled/14/353340/delete-sign--v2.png"/></button>
+            </h5>
+            <div class="md-content-body">
+                <div class="member-input">
+                    <div class="member">
+                        <label for="">群組名稱 Name</label>
+                        <input type="text" value="群組Ｓ">
+                    </div>
+                    <div class="saveBtn-bg">
+                        <button class="saveBtn" type="button" onclick="open_modal2()" style="animation-delay: 0.2s;">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-  <ul class="list"></ul>
-
-  <h1>每個農場農夫的名子</h1>
-  <ul class="list2"></ul>
-
-
-  <h6 class="h6Title">
-    <em>temple</em>
-  </h6>
-
-  <h3>每個農場農夫的名字</h3>
-  <ul class="list3">
-    <li>農夫一</li>
-    <li>農夫二</li>
-  </ul>
-
-  <textarea name="" id="content" cols="30" rows="10"></textarea>
-  <input id="send" type="button" value="送出" onclick="submitText()">
-  <p id="mainText"></p>
-
-
-  <input type="button" value="submit" class="btn">
-
-  <input type="button" value="點我！" class="btn2">
-
-
-  <input type="button" value="點我啦！" class="btn3">
-
-  <input type="button" value="點我啦！" class="btn4">
-
-  <input type="button" value="ON點擊！" class="btnOn">
-  <input type="button" value="Add點擊！" class="btnAdd">
-
-  <div class="box"></div>
-
-
-  <a class="link" href="http://www.google.com.tw" style="margin-top:100px; display:block">menu icon</a>
-
-  <div class="header">
-    <ul style="padding-top: 100px; border: 1px solid #CCC;">
-      <li>
-        <a href="#">123</a>
-      </li>
-    </ul>
-  </div>  
-
-  <select id="areaId">
-    <option value="前鎮區">前鎮區</option>
-    <option value="苓雅區">苓雅區</option>
-  </select>
-
-
-  <ul class="listUl"></ul>
+    <div class="md-modal md-effect-1" id="modal-3">
+        <div class="md-content">
+            <h5>新增權限類別
+                <button class="md-close"><img src="https://img.icons8.com/ios-filled/14/353340/delete-sign--v2.png"/></button>
+            </h5>
+            <div class="md-content-body">
+                <div class="member-input">
+                    <div class="member">
+                        <label for="">權限類別名稱 Name</label>
+                        <input type="text" value="系統管理者">
+                    </div>
+                    <div class="saveBtn-bg">
+                        <button class="saveBtn" type="button" onclick="open_modal2()" style="animation-delay: 0.2s;">儲存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
-  <div class="box01"></div>
+    <div class="md-modal md-effect-1" id="modal-4">
+        <div class="md-content">
+            <h5>修改會員資料
+                <button class="md-close"><img src="https://img.icons8.com/ios-filled/14/353340/delete-sign--v2.png"/></button>
+            </h5>
+            <div class="md-content-body">
+                <div class="member-input">
+                    <div class="member">
+                        <label for="">姓名 Name</label>
+                        <input type="text" value="系統管理員">
+                    </div>
+                    <div class="member">
+                        <label for="">密碼 Password</label>
+                        <input type="password" value="123456789">
+                    </div>
+                
+                    <div class="member">
+                        <label for="">信箱 Mail</label>
+                        <input type="mail" value="a123456@gmail.com">
+                    </div>
+
+                    <div class="member">
+                        <label for="">備註 Mail</label>
+                        <textarea name="" id="" cols="30" rows="4">Hello</textarea>
+                    </div>
+                    <div class="saveBtn-bg">
+                        <button class="saveBtn" type="button" onclick="open_modal2()" style="animation-delay: 0.2s;">儲存</button>
+                    </div>
+                    
+                </div>
+            </div>
+         </div>
+    </div>
 
 
-    <div class="box box1"></div>
-    <div class="box box2"></div>
-    <div class="box box3"></div>
-    <div class="box box4"></div>
-    <div class="box box5"></div>
-    <div class="box box6"></div>
+
+    <div class="md-modal md-effect-1" id="modal-5">
+        <div class="md-content">
+            <h5>新增消息
+                <button class="md-close"><img src="https://img.icons8.com/ios-filled/14/353340/delete-sign--v2.png"/></button>
+            </h5>
+            <div class="md-content-body">
+                <div class="member-input">
+                    <div class="member">
+                        <label for="">標題 Title</label>
+                        <input type="text" value="標題標題標題標題標題標題標題標題標題標題標題">
+                    </div>
+                    <div class="member">
+                        <label for="">內容簡述 Description</label>
+                        <input type="text" value="內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述">
+                    </div>
+                
+                    <div class="member">
+                        <label for="">內容 Content</label>
+                        <textarea name="" id="" cols="30" rows="10">內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容</textarea>
+                    </div>
+                    
+                    <div class="member input-group spinner">
+                        <label for="">排序 Sort</label>
+                        <div style="  display: flex;align-items: center">
+                            <div class="input-group-prepend">
+                                <button class="btn text-monospace minus" type="button">-</button>
+                            </div>
+                                <input type="number" class="count form-control" min="0" max="10" step="1" value="1">
+                            <div class="input-group-append">
+                                <button class="btn text-monospace plus" type="button">+</button>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="saveBtn-bg">
+                        <button class="saveBtn" type="button" onclick="open_modal2()">儲存</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
 
 
-    <ul class="list" style="list-style: none; color: #ccc;font-family: '微軟正黑體'; font-weight: 600; border-left: 3px solid #CCC;"> 
-      <li>Momo</li>
-      <li>Tree</li>
-    </ul>
 
-    <h2>請輸入你的姓名</h2>
-    <input type="text" class="textClass">
-    <input type="button" class="btnClass" value="點擊">
-    <input type="button" class="btnCall" value="呼叫明子">
-
-    <ul class="list4">
-      <li data-num="1" data-dog="3" class="list4_li">我是第一筆資料</li>
-    </ul>
+    <div class="md-modal md-effect-1" id="modal-6">
+        <div class="md-content">
+            <h5>新增消息
+                <button class="md-close"><img src="https://img.icons8.com/ios-filled/14/353340/delete-sign--v2.png"/></button>
+            </h5>
+            <div class="md-content-body">
+                <div class="member-input">
+                    <div class="member">
+                        <label for="">標題 Title</label>
+                        <input type="text" value="標題標題標題標題標題標題標題標題標題標題標題">
+                    </div>
+                    <div class="member">
+                        <label for="">內容簡述 Description</label>
+                        <input type="text" value="內容簡述內容簡述內容簡述內容簡述內容簡述內容簡述">
+                    </div>
+                
+                    <div class="member">
+                        <label for="">內容 Content</label>
+                        <textarea name="" id="" cols="30" rows="10">內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容</textarea>
+                    </div>
+                    
+                    <div class="member input-group spinner">
+                        <label for="">排序 Sort</label>
+                        <div style="  display: flex;align-items: center">
+                            <div class="input-group-prepend">
+                                <button class="btn text-monospace minus" type="button">-</button>
+                            </div>
+                                <input type="number" class="count form-control" min="0" max="10" step="1" value="99">
+                            <div class="input-group-append">
+                                <button class="btn text-monospace plus" type="button">+</button>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="saveBtn-bg">
+                        <button class="saveBtn" type="button" onclick="open_modal2()">儲存</button>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class="md-overlay"></div>
 </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- <script  type="text/javascript" src='js/bootstrap.min.js'></script> -->
-    <script  type="text/javascript" src='/Portfolio/js/main.js'></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://vjs.zencdn.net/5-unsafe/video.js"></script>
+<script src="js/flatpickr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script type="text/javascript" src='js/main.js'></script>
+<script>
+    $(".flatpickr").flatpickr({
+        mode: "range",
+        dateFormat: "m-d"
+        }
+    );
+</script>
 </html>

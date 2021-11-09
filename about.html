@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2Plus1 Studio</title>
+		<script src="https://kit.fontawesome.com/d17564c281.js" crossorigin="anonymous"></script>
+		<link rel="shortcut icon" href="images/2Plus1_Logo.png" type="image/x-icon">
+		<link rel='stylesheet' href='css/main.css'>
+		<link rel="stylesheet" href="css/responsive.css">
+	</head>
+	
+	<style>
+		.slider_inner{
+			left: 0 !important;
+			width: 100% !important;
+			display: flex !important;
+			transform: translateX(0) translateY(-50%) !important;
+		}
+		.slider_inner__slide{
+			width: 100% !important;
+		}
+		.portfolio_home__slider{
+			transform: inherit !important;
+		}
+
+		@media all and (max-width: 767px){
+			.slider_inner{
+				display: block !important;
+				overflow-y: scroll !important;
+
+			}
+			body .portfolio_home__slider .slider_inner__slide{
+				height: 100%;
+			}
+		}
+		@media all and (max-width:1199px) {
+			.slider_page__slide{
+				margin-left: 0 !important;
+			}
+
+		}
+
+	</style>
+	<body>
+		<div class='portfolio'>
+			<div class='portfolio_home'>
+				<div style='position: fixed; z-index: -99; width: 2320px; height: 180%; left: 0;top: -38%;'>
+				</div>
+				<div class='portfolio_home__title'>
+					<div class='logo'>
+						<!-- 開頭小方塊 -->
+						<div class='page_portfolio' style="opacity: 1; clip-path: polygon(0px 100%, 100% 100%, 100% 0%, 0px 0%);">
+							<section class="tv-noise"></section>
+							<svg class="noise-svg">
+								<filter id="noise">
+									<feTurbulence id="turbuelence">
+										<animate attributeName="baseFrequency" dur="380s" values="0.9 0.9; 0.8
+																0.8; 0.9 0.9;" repeatCount="indefinite"></animate>
+									</feTurbulence>
+									<feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
+								</filter>
+							</svg>
+							<div class='portfolio_home__header'>
+								<div class='logoMain'>
+									<img src='images/logo-main.png'>
+								</div>
+								<div class='nav'>
+									<ul>
+										<li class='trigger'><a class="main-link" href="index.html">Work</a></li>
+										<li class='trigger'><a class="main-link" href="services.html">Services</a></li>
+										<li class='active trigger' style="pointer-events: none"><a  class="main-link">About</a></li>
+										<li class='trigger'><a class="main-link" href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+								<div class="clock">
+									<div class="hero-circle">
+										<div class="hero-face">
+											<div id="hour" class="hero-hour"></div>
+											<div id="minute" class="hero-minute"></div>
+											<div id="second" class="hero-second"></div>
+										</div>
+									</div>
+									<p class="currenttime shadow"></p>
+								</div>	
+								<div class="site-header site-header-portfolio">
+									<canvas class="site-nav-canvas"></canvas>
+									<button class="js-menu menu button-clear trigger" aria-label="Site navigation">
+										<span class="menu-icon-line-1 menu-icon-line"></span>
+										<span class="menu-icon-line-2 menu-icon-line"></span>
+										<span class="menu-icon-line-3 menu-icon-line"></span>
+									</button>
+									<div class="site-nav-overlay js-nav">
+										<svg class="noise-svg">
+											<filter id="noise">
+												<feTurbulence id="turbuelence">
+													<animate attributeName="baseFrequency" dur="380s" values="0.9 0.9; 0.8
+																					0.8; 0.9 0.9;" repeatCount="indefinite"></animate>
+												</feTurbulence>
+												<feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
+											</filter>
+										</svg>
+										<div class="nav-content">
+											<div class="js-nav-header nav-header">
+												<span class="nav-header-text">MENU</span>
+												<div class="nav-header-line js-nav-header-line"></div>
+											</div>
+											<ul class="nav-categories">
+												<li class="nav-category js-nav-animate"><a class="nav-link main-link" href="index.html">Work</a><small>作品集</small></li>
+												<li class="nav-category js-nav-animate"><a class="nav-link main-link" href="services.html">Service</a><small>服務項目</small></li>
+												<li class="nav-category js-nav-animate"><a class="nav-link main-link" style="pointer-events: none">About</a><small>關於我們</small></li>
+												<li class="nav-category js-nav-animate"><a class="nav-link main-link" href="contact.html">Contact</a><small>聯絡我們</small></li>
+											</ul>
+											<div class="nav-sublinks js-nav-animate">
+												<div class="js-nav-animate" style="display: flex; flex-direction: column; font-size: 12px;">
+													<a class="nav-link nav-sublink"><span>Tel.</span>0919 476 628</a>
+													<a class="nav-link nav-sublink"><span>Email.</span>4A4J2009@stust.edu.tw</a>
+													<a class="nav-link nav-sublink"><span>Taichung,</span>台中市西屯區文心路三段296-1號</a>
+													<a class="nav-link nav-sublink">No. 296-1, Sec. 3, Wenxin Rd., Xitun Dist., Taichung City 407322 , Taiwan</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 滑動 -->
+							<div class='portfolio_home__slider'>
+								<div class='slider_inner'>
+									<div class='slider_inner__slide slider_page__slide' style="margin-left: 50px; margin-right: 0;">
+										<div class="big_contact">
+											<small class="sub-ttl">
+												<em>03</em>
+												<span>About us</span>
+											</small>
+											<a class="link" href="#">ABOUT!</a>
+											<small style="font-size: 14px; padding-left: 0; line-height: 30px;">2Plus1 位於台中，成立於2021年，主力於網站設計與品牌識別。<br>
+												我們針對品牌風格、品牌核心、網站內容分析後客製設計，能在現實框架中找出<br>未知的新可能。<br>
+												每個角色都是一片版塊，既可獨立存在且能擠壓創造成為新的可能。<br>
+												由型態、顏色、比例、拼貼、對齊、包覆產生的版塊，點線成面，形與形之間的<br>串聯，讓所有的規律與不規律整合呈現。</small>
+										</div>	
+									</div>
+									<div class='slider_inner__slide' style="margin-right: 50px;">
+										<div class="teamimg" style="top: 100px;left: 0;">
+											<div class="">
+												<div class="mask" style="background-image:url(http://www.twdreamlife.com/wp-content/uploads/2021/01/%E8%A8%AD%E8%A8%88%E5%B8%AB%E5%BD%A2%E8%B1%A1%E7%85%A7-2.jpg)">
+												</div>
+											</div>
+											<div class="introduce">
+												<p>UI / UX Designer</p>
+												<p>Identity Designer</p>
+												<small>Yooni Hou</small>
+											</div>
+										</div>	
+
+										<div class="teamimg" style="left: 200px;">
+											<div class="">
+												<div class="mask" style="background-image:url(https://1.bp.blogspot.com/-yTXsY0D9lIE/X7tpyOoIYWI/AAAAAAAF0_c/1YD3QhWOw20Yma7_32XCeWtbkMV1NpDEQCLcBGAsYHQ/s2015/126430512_3663942230365872_1083139399157104059_o.jpg)">
+												</div>
+											</div>	
+											<div class="introduce">
+												<p>Founder & Director</p>
+												<p>Front-End Developer</p>
+												<small>Tree Wu</small>
+											</div>
+										</div>	
+
+										<div class="teamimg" style="bottom: 50px; left: -30px;">
+											<div class="">
+												<div class="mask" style="background-image:url(https://1.bp.blogspot.com/--nsQr8v7Iqw/XUnGZiTodBI/AAAAAAAE9yo/0uJA2TLzL6gDEtowyttxhqRRWc5PNRnxgCLcBGAs/s640/CKY_1316.jpg);">
+												</div>
+											</div>	
+											<div class="introduce">
+												<p>Web Designer</p>
+												<p>Front-End Developer</p>
+												<small>Yooni Hou</small>
+											</div>
+										</div>	
+										<img class="bgBtLine" src="images/pic03.png" alt="" style="position: absolute; bottom: -50px; right: -95px;">
+									</div>
+								</div>
+							</div>
+							
+							<footer>
+								<small>2plus1.code@gmail.com</small>
+								<small>2PLUS1©2021 Copyright. All Rights Reserved.</small>
+							</footer>
+						</div>
+					</div>
+					<hr>
+					<h1> We are an Independent <span>Creative Advertising Branding Agency</span>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" ></script>
+	<script src="https://momentjs.com/static/js/core-home.js"></script>
+	<script type="text/javascript" src='js/menu.js'></script>
+	<script type="text/javascript" src='js/main.js'></script>
+	<script>
+		$(document).ready(function(){
+			var mouseX, mouseY;
+			var ww = $( window ).width();
+			var wh = $( window ).height();
+			var traX, traY;
+			$(document).mousemove(function(e){
+				mouseX = e.pageX;
+				mouseY = e.pageY;
+				traX = ((4 * mouseX) / 570) + 40;
+				traY = ((4 * mouseY) / 570) + 50;
+				console.log(traX);
+				$(".mask").css({"background-position": traX + "%" + traY + "%"});
+			});
+		});
+
+		window.onload = function() {
+    	PagePortfolio()
+		}
+	</script>
+</html>

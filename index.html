@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Yooni Portfolio</title>
+		<script src="https://kit.fontawesome.com/d17564c281.js" crossorigin="anonymous"></script>
+		<link rel="shortcut icon" href="images/2Plus1_Logo.png" type="image/x-icon">
+		<link rel='stylesheet' href='css/main.css'>
+		<link rel="stylesheet" href="css/responsive.css">
+	</head>
+	
+
+	<style>
+		@media all and (max-width: 767px){
+			.slider_contact__slide{
+				width: 100% !important;
+				height: auto !important;
+			}
+			.cube__face{
+				display: none !important;
+			}
+			.link{
+				font-size: 3.5em;
+				line-height: 60px !important;
+			}
+			.big_contact small{
+				font-size: 12px !important;
+			}
+			.portfolio_home__slider{
+				height: calc(100% + 100px) !important;
+			}
+		}
+	</style>
+	<body>
+		<div class='portfolio'>
+			<div class='portfolio_home'>
+				<div style='position: fixed; z-index: -99; width: 2320px; height: 180%; left: 0;top: -38%;'>
+				</div>
+				<div class='portfolio_home__header'>
+					<div class="hamburger trigger">
+						<div class="hamburger_part"></div>
+						<div class="hamburger_part"></div>
+						<div class="hamburger_part"></div>
+					</div>
+				</div>
+				<div class='portfolio_home__title'>
+					<div class='logo'>
+						<img class='first' src='images/logo-first.png'>
+						<img class='second' src='images/logo-second.png'>
+						<!-- 開頭小方塊 -->
+						<div class='page_portfolio page_portfolio_work'>
+							<section class="tv-noise"></section>
+							<svg class="noise-svg">
+								<filter id="noise">
+									<feTurbulence id="turbuelence">
+										<animate attributeName="baseFrequency" dur="380s" values="0.9 0.9; 0.8
+																0.8; 0.9 0.9;" repeatCount="indefinite"></animate>
+									</feTurbulence>
+									<feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
+								</filter>
+							</svg>
+							<div class='portfolio_home__header'>
+								<div class='logoMain'>
+									<img src='images/logo-main.png'>
+								</div>
+								<div class='nav'>
+									<ul>
+										<li class='active trigger'><a style="pointer-events: none">Work</a></li>
+										<!-- <li class='trigger'><a class="main-link" href="services.html">Services</a></li> -->
+										<li class='trigger'><a class="main-link" href="#">About</a></li>
+										<li class='trigger'><a class="main-link" href="#">Contact</a></li>
+									</ul>
+								</div>
+								<div class="clock">
+									<div class="hero-circle">
+										<div class="hero-face">
+											<div id="hour" class="hero-hour"></div>
+											<div id="minute" class="hero-minute"></div>
+											<div id="second" class="hero-second"></div>
+										</div>
+									</div>
+									<p class="currenttime shadow"></p>
+								</div>	
+								<div class="site-header site-header-portfolio">
+									<canvas class="site-nav-canvas"></canvas>
+									<button class="js-menu menu button-clear trigger" aria-label="Site navigation">
+										<span class="menu-icon-line-1 menu-icon-line"></span>
+										<span class="menu-icon-line-2 menu-icon-line"></span>
+										<span class="menu-icon-line-3 menu-icon-line"></span>
+									</button>
+									<div class="site-nav-overlay js-nav">
+										<svg class="noise-svg">
+											<filter id="noise">
+												<feTurbulence id="turbuelence">
+													<animate attributeName="baseFrequency" dur="380s" values="0.9 0.9; 0.8
+																					0.8; 0.9 0.9;" repeatCount="indefinite"></animate>
+												</feTurbulence>
+												<feDisplacementMap in="SourceGraphic" scale="60"></feDisplacementMap>
+											</filter>
+										</svg>
+										<div class="nav-content">
+											<div class="js-nav-header nav-header">
+												<span class="nav-header-text">MENU</span>
+												<div class="nav-header-line js-nav-header-line"></div>
+											</div>
+											<ul class="nav-categories">
+												<li class="nav-category js-nav-animate"><a class="nav-link main-link" style="pointer-events: none">Work</a><small>作品集</small></li>
+												<!-- <li class="nav-category js-nav-animate"><a class="nav-link main-link" href="services.html">Service</a><small>服務項目</small></li> -->
+												<li class="nav-category js-nav-animate"><a class="nav-link main-link" href="javascript:void(0)" style="pointer-events: none">About</a><small>關於我</small></li>
+												<li class="nav-category js-nav-animate"><a class="nav-link main-link" href="javascript:void(0)" style="pointer-events: none">Contact</a><small>聯絡我</small></li>
+											</ul>
+											<div class="nav-sublinks js-nav-animate">
+												<div class="js-nav-animate" style="display: flex; flex-direction: column; font-size: 12px;">
+													<a class="nav-link nav-sublink"><span>Tel.</span>0919 476 628</a>
+													<a class="nav-link nav-sublink"><span>Email.</span>oyooing@gmail.com</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='slider_note'> Drag through our work </div>
+							<!-- work最內層 -->
+							<div class='portfolio_home__work'>
+								<div class='portfolio_home__header work'>
+									<div class='back'>
+										<img class='trigger' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/arrowDown.png'>
+									</div>
+									<div class='logoMain'>
+										<img src='images/logo-main-w.png'>
+									</div>
+									<div class='nav'>
+										<ul>
+											<li class='active trigger'><a class="main-link" style="pointer-events: none">Work</a></li>
+											<!-- <li class='trigger'><a class="main-link" href="services.html">Services</a></li> -->
+											<li class='trigger'><a class="main-link" href="javascript:void(0)" style="pointer-events: none">About</a></li>
+											<li class='trigger'><a class="main-link" href="javascript:void(0)" style="pointer-events: none">Contact</a></li>
+										</ul>
+									</div>
+									<div class='number white'>0161 345 3464</div>
+									<div class='hamburger white trigger'>
+									</div>
+								</div>
+								<div class='slideClone'>
+									<div class='title f'>
+										<br> From 2019 - 2020
+									</div>
+									<div class='image'>
+										<img draggable='false' src='images/proj01Out.png'>
+										<div class='overlay'></div>
+										<div class='cats'>UI / UX Design & Front End & Sketch</div>
+										<div class='title'>Dougo POS</div>
+									</div>
+									<div class="page scroll">
+										<div class="page__container">
+											<a class="open-popup trigger">OPEN PROJECT</a>
+										</div>
+									</div>
+									<div id="popup-article" class="popup">
+										<div class="before-popup"></div>
+										<div class="popup__container">
+											<a href="#" class="popup__close"></a>
+											<div class="popup__content">
+												<svg id="draw" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="419.53px" viewBox="0 0 595.28 419.53" style="enable-background:new 0 0 595.28 419.53;" xml:space="preserve">
+													<g id="Group_1" data-name="Group 1" transform="translate(-754.49 -1477.71)">
+														<path id="R" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st0" d="M8.49-102.29H50.6a50.476,50.476,0,0,1,16.531,2.547A33.237,33.237,0,0,1,79-92.767,28.929,28.929,0,0,1,86.14-82.4a33.44,33.44,0,0,1,2.375,12.658,30.832,30.832,0,0,1-5.53,18.053,29.184,29.184,0,0,1-7.164,7.031,35.551,35.551,0,0,1-9.676,4.646L89.755.5H60.6L39.435-37.925h-5.15V.5H8.49ZM88.015-.5,64.642-40.608l.611-.181c13.94-4.13,22.262-14.955,22.262-28.956,0-19.163-14.488-31.545-36.91-31.545H9.49V-.5h23.8V-38.925h6.74L61.2-.5ZM33.285-81.7h15.87c4.629,0,8.21,1.194,10.643,3.548A10.8,10.8,0,0,1,62.43-74.03a15.524,15.524,0,0,1,.855,5.3c0,4.2-1.173,7.471-3.486,9.728-2.4,2.343-5.983,3.532-10.644,3.532H33.285Zm15.87,25.23c8.59,0,13.13-4.239,13.13-12.26,0-7.719-4.663-11.97-13.13-11.97H34.285v24.23Z" transform="translate(746 1580)" />
+														<path id="E" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st1" d="M8.49-102.29H71.84v20.865H34.285v19.59h33.2v20.14h-33.2v21.33H71.84V.5H8.49Zm62.35,1H9.49V-.5H70.84V-19.365H33.285v-23.33h33.2v-18.14h-33.2v-21.59H70.84Z" transform="translate(841 1580)" />
+														<path id="V" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st2" d="M68.793.5H37.057L.6-102.29h27.46L52.926-26.539,77.939-102.29h27.314Zm-31.03-1H68.087l35.75-100.79H78.661L52.924-23.341,27.333-101.29H2.013Z" transform="translate(920.032 1580)" />
+														<path id="I" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st3" d="M34.285.5H8.49V-102.29H34.285ZM9.49-.5H33.285V-101.29H9.49Z" transform="translate(1024.584 1580)" />
+														<path id="E-2" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st4" data-name="E" d="M8.49-102.29H71.84v20.865H34.285v19.59h33.2v20.14h-33.2v21.33H71.84V.5H8.49Zm62.35,1H9.49V-.5H70.84V-19.365H33.285v-23.33h33.2v-18.14h-33.2v-21.59H70.84Z" transform="translate(1069 1580)" />
+														<path id="W" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st5" d="M122.911.5H92.117L76.261-64.9,59.84.5H29.046L2.982-102.29H30.571L44.857-30.011,62.538-102.29H90.586L107.55-30.051l14.42-72.239h27.737ZM92.9-.5h29.235l26.274-100.79H122.79L108.08-27.6l-.977.016L89.794-101.29H63.322L45.291-27.576l-.976-.022L29.749-101.29H4.268L29.824-.5H59.06L75.785-67.112l.971,0Z" transform="translate(1147 1580)" />
+													</g>
+												</svg>
+												<div class="basic-box">
+													<h2>Dougo POS</h2>
+													<div class="type">
+														<img src="https://img.icons8.com/fluent-systems-regular/24/ffffff/tag-window.png" />
+														<a>Sketch</a>
+														<small> | </small>
+														<a>Writeframe</a>
+														<small> | </small>
+														<a>UI / UX</a>
+														<small> | </small>
+														<a>SASS</a>
+														<small> | </small>
+														<a>JS</a>
+														<small> | </small>
+														<a>JQ</a>
+														<small> | </small>
+														<a>Github</a>
+													</div>
+												</div>
+												<div class="desc-box">
+													<h2>Description</h2>
+													<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+												</div>
+												<img src="images/proj01Inner.jpg" alt="">
+												<div class="designer-box">
+													<p>UI/UX | Yooni</p>
+													<p>Front-End Developer | Yooni</p>
+
+												</div>
+											</div>
+										</div>
+										<div class="after-popup"></div>
+									</div>
+								</div>
+								<div class='slideClone'>
+									<div class='title f'>
+										<br> From 2019 - 2020
+									</div>
+									<div class='image'>
+										<img draggable='false' src='images/proj02Out.jpg'>
+										<div class='overlay'></div>
+										<div class='cats'>UI / UX Design & Front End & Sketch</div>
+										<div class='title'>Dougo Park Shopping Website</div>
+									</div>
+									<div id="popup-article" class="popup">
+										<div class="before-popup"></div>
+										<div class="popup__container">
+											<a href="#" class="popup__close"></a>
+											<div class="popup__content">
+												<svg id="draw" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="419.53px" viewBox="0 0 595.28 419.53" style="enable-background:new 0 0 595.28 419.53;" xml:space="preserve">
+													<g id="Group_1" data-name="Group 1" transform="translate(-754.49 -1477.71)">
+														<path id="R" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st0" d="M8.49-102.29H50.6a50.476,50.476,0,0,1,16.531,2.547A33.237,33.237,0,0,1,79-92.767,28.929,28.929,0,0,1,86.14-82.4a33.44,33.44,0,0,1,2.375,12.658,30.832,30.832,0,0,1-5.53,18.053,29.184,29.184,0,0,1-7.164,7.031,35.551,35.551,0,0,1-9.676,4.646L89.755.5H60.6L39.435-37.925h-5.15V.5H8.49ZM88.015-.5,64.642-40.608l.611-.181c13.94-4.13,22.262-14.955,22.262-28.956,0-19.163-14.488-31.545-36.91-31.545H9.49V-.5h23.8V-38.925h6.74L61.2-.5ZM33.285-81.7h15.87c4.629,0,8.21,1.194,10.643,3.548A10.8,10.8,0,0,1,62.43-74.03a15.524,15.524,0,0,1,.855,5.3c0,4.2-1.173,7.471-3.486,9.728-2.4,2.343-5.983,3.532-10.644,3.532H33.285Zm15.87,25.23c8.59,0,13.13-4.239,13.13-12.26,0-7.719-4.663-11.97-13.13-11.97H34.285v24.23Z" transform="translate(746 1580)" />
+														<path id="E" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st1" d="M8.49-102.29H71.84v20.865H34.285v19.59h33.2v20.14h-33.2v21.33H71.84V.5H8.49Zm62.35,1H9.49V-.5H70.84V-19.365H33.285v-23.33h33.2v-18.14h-33.2v-21.59H70.84Z" transform="translate(841 1580)" />
+														<path id="V" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st2" d="M68.793.5H37.057L.6-102.29h27.46L52.926-26.539,77.939-102.29h27.314Zm-31.03-1H68.087l35.75-100.79H78.661L52.924-23.341,27.333-101.29H2.013Z" transform="translate(920.032 1580)" />
+														<path id="I" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st3" d="M34.285.5H8.49V-102.29H34.285ZM9.49-.5H33.285V-101.29H9.49Z" transform="translate(1024.584 1580)" />
+														<path id="E-2" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st4" data-name="E" d="M8.49-102.29H71.84v20.865H34.285v19.59h33.2v20.14h-33.2v21.33H71.84V.5H8.49Zm62.35,1H9.49V-.5H70.84V-19.365H33.285v-23.33h33.2v-18.14h-33.2v-21.59H70.84Z" transform="translate(1069 1580)" />
+														<path id="W" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st5" d="M122.911.5H92.117L76.261-64.9,59.84.5H29.046L2.982-102.29H30.571L44.857-30.011,62.538-102.29H90.586L107.55-30.051l14.42-72.239h27.737ZM92.9-.5h29.235l26.274-100.79H122.79L108.08-27.6l-.977.016L89.794-101.29H63.322L45.291-27.576l-.976-.022L29.749-101.29H4.268L29.824-.5H59.06L75.785-67.112l.971,0Z" transform="translate(1147 1580)" />
+													</g>
+												</svg>
+												<div class="basic-box">
+													<h2>Dougo Park 購物形象網站</h2>
+													<div class="type">
+														<img src="https://img.icons8.com/fluent-systems-regular/24/ffffff/tag-window.png" />
+														<a>Sketch</a>
+														<small> | </small>
+														<a>Writeframe</a>
+														<small> | </small>
+														<a>UI / UX</a>
+														<small> | </small>
+														<a>SASS</a>
+														<small> | </small>
+														<a>JS</a>
+														<small> | </small>
+														<a>JQ</a>
+														<small> | </small>
+														<a>Github</a>
+													</div>
+												</div>
+												<div class="desc-box">
+													<h2>Description</h2>
+													<p class="text">【負責此平台前端程式，UI/UX設計，全流程及規劃(含購物、優惠使用流程)】<br>
+													- UI/UX設計 / 整體設彩計畫 / 作品標籤動態分類 / 全客製化後台介面 / 會員登入及註冊 / 消費紀錄 / 會員點數紀錄 / 會員票卡使用紀錄 / 商品項目及規格 / 商品快速預覽檢視<br>
+													- RWD 響應式網頁設計<br>
+													- SASS / JQUERY 動畫特效 / 轉場動畫<br>
+													- 視覺結合前端程式撰寫</p>
+												</div>
+												<img src="images/pro02Inner.jpg" alt="">
+												<!-- <p style="background: #000; margin: 0; padding: 60px 0; font-size: 18px;">Visual identity and art direction for RAJATON exhibition at Helsinki Design Week.</p>
+												<img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/22f43e85818529.5ddd4e4accab1.jpg" alt="">
+												<div class="spacer module-separator">
+													<div class="divider"></div>
+												</div>
+												<img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/2d232685818529.5e0f7341c5a61.jpg" alt=""> -->
+												<div class="designer-box">
+													<p>UI/UX | Yooni</p>
+													<p>Front-End Developer | Yooni</p>
+
+												</div>
+											</div>
+										</div>
+										<div class="after-popup"></div>
+									</div>
+									<div class="page scroll">
+										<div class="page__container">
+											<a class="open-popup trigger">OPEN PROJECT</a>
+										</div>
+									</div>
+								</div>
+								<div class='slideClone'>
+									<div class='title f'>
+										<br> From 2021.6 - 2021.8
+									</div>
+									<div class='image'>
+										<img draggable='false' src='images/proj03Out.jpg'>
+										<div class='overlay'></div>
+										<div class='cats'>UI / UX Design & Front End & Sketch</div>
+										<div class='title'>Portfolio Website</div>
+									</div>
+									<div class="page scroll">
+										<div class="page__container">
+											<a class="open-popup trigger">OPEN PROJECT</a>
+										</div>
+									</div>
+									<div id="popup-article" class="popup">
+										<div class="before-popup"></div>
+										<div class="popup__container">
+											<a href="#" class="popup__close"></a>
+											<div class="popup__content">
+												<svg id="draw" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="419.53px" viewBox="0 0 595.28 419.53" style="enable-background:new 0 0 595.28 419.53;" xml:space="preserve">
+													<g id="Group_1" data-name="Group 1" transform="translate(-754.49 -1477.71)">
+														<path id="R" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st0" d="M8.49-102.29H50.6a50.476,50.476,0,0,1,16.531,2.547A33.237,33.237,0,0,1,79-92.767,28.929,28.929,0,0,1,86.14-82.4a33.44,33.44,0,0,1,2.375,12.658,30.832,30.832,0,0,1-5.53,18.053,29.184,29.184,0,0,1-7.164,7.031,35.551,35.551,0,0,1-9.676,4.646L89.755.5H60.6L39.435-37.925h-5.15V.5H8.49ZM88.015-.5,64.642-40.608l.611-.181c13.94-4.13,22.262-14.955,22.262-28.956,0-19.163-14.488-31.545-36.91-31.545H9.49V-.5h23.8V-38.925h6.74L61.2-.5ZM33.285-81.7h15.87c4.629,0,8.21,1.194,10.643,3.548A10.8,10.8,0,0,1,62.43-74.03a15.524,15.524,0,0,1,.855,5.3c0,4.2-1.173,7.471-3.486,9.728-2.4,2.343-5.983,3.532-10.644,3.532H33.285Zm15.87,25.23c8.59,0,13.13-4.239,13.13-12.26,0-7.719-4.663-11.97-13.13-11.97H34.285v24.23Z" transform="translate(746 1580)" />
+														<path id="E" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st1" d="M8.49-102.29H71.84v20.865H34.285v19.59h33.2v20.14h-33.2v21.33H71.84V.5H8.49Zm62.35,1H9.49V-.5H70.84V-19.365H33.285v-23.33h33.2v-18.14h-33.2v-21.59H70.84Z" transform="translate(841 1580)" />
+														<path id="V" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st2" d="M68.793.5H37.057L.6-102.29h27.46L52.926-26.539,77.939-102.29h27.314Zm-31.03-1H68.087l35.75-100.79H78.661L52.924-23.341,27.333-101.29H2.013Z" transform="translate(920.032 1580)" />
+														<path id="I" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st3" d="M34.285.5H8.49V-102.29H34.285ZM9.49-.5H33.285V-101.29H9.49Z" transform="translate(1024.584 1580)" />
+														<path id="E-2" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st4" data-name="E" d="M8.49-102.29H71.84v20.865H34.285v19.59h33.2v20.14h-33.2v21.33H71.84V.5H8.49Zm62.35,1H9.49V-.5H70.84V-19.365H33.285v-23.33h33.2v-18.14h-33.2v-21.59H70.84Z" transform="translate(1069 1580)" />
+														<path id="W" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st5" d="M122.911.5H92.117L76.261-64.9,59.84.5H29.046L2.982-102.29H30.571L44.857-30.011,62.538-102.29H90.586L107.55-30.051l14.42-72.239h27.737ZM92.9-.5h29.235l26.274-100.79H122.79L108.08-27.6l-.977.016L89.794-101.29H63.322L45.291-27.576l-.976-.022L29.749-101.29H4.268L29.824-.5H59.06L75.785-67.112l.971,0Z" transform="translate(1147 1580)" />
+													</g>
+												</svg>
+												<div class="basic-box">
+													<h2>Portfolio Website 個人工作室形象網站</h2>
+													<div class="type">
+														<img src="https://img.icons8.com/fluent-systems-regular/24/ffffff/tag-window.png" />
+														<a>Sketch</a>
+														<small> | </small>
+														<a>Writeframe</a>
+														<small> | </small>
+														<a>UI / UX</a>
+														<small> | </small>
+														<a>SASS</a>
+														<small> | </small>
+														<a>JS</a>
+														<small> | </small>
+														<a>JQ</a>
+														<small> | </small>
+														<a>Github</a>
+													</div>
+												</div>
+												<div class="desc-box">
+													<h2>Description</h2>
+													<p class="text">L【負責此平台前端程式，UI/UX設計<br>
+													- UI設計 / 網頁切版 / 整體設彩計畫 / 作品標籤動態分類 / 客製化後台介面<br>
+													- RWD 響應式網頁設計<br>
+													- CSS / JQUERY 動畫特效 / 轉場動畫 / 頁面Loding動畫<br>
+													- 視覺結合前端程式撰寫</p>
+												</div>
+												<img src="images/proj03Inner.jpg" alt="">
+												<!-- <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/379fc485818529.5e13bcdbc7d25.jpg" alt="">
+												<p style="background: #000; margin: 0; padding: 60px 0; font-size: 18px;">Visual identity and art direction for RAJATON exhibition at Helsinki Design Week.</p>
+												<img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/22f43e85818529.5ddd4e4accab1.jpg" alt="">
+												<div class="spacer module-separator">
+													<div class="divider"></div>
+												</div>
+												<img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/2d232685818529.5e0f7341c5a61.jpg" alt=""> -->
+												<div class="designer-box">
+													<p>UI/UX | Yooni</p>
+													<p>Front-End Developer | Yooni</p>
+
+												</div>
+											</div>
+										</div>
+										<div class="after-popup"></div>
+									</div>
+								</div>
+								<div class='slideClone'>
+									<div class='title f'>
+										<br> From 2020.11 - 2021.01
+									</div>
+									<div class='image'>
+										<img draggable='false' src='images/proj04Out.png'>
+										<div class='overlay'></div>
+										<div class='cats'>UI / UX Design & Front End & Sketch</div>
+										<div class='title'>Web CMS</div>
+									</div>
+									<div id="popup-article" class="popup">
+										<div class="before-popup"></div>
+										<div class="popup__container">
+											<a href="#" class="popup__close"></a>
+											<div class="popup__content">
+												<svg id="draw" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="419.53px" viewBox="0 0 595.28 419.53" style="enable-background:new 0 0 595.28 419.53;" xml:space="preserve">
+													<g id="Group_1" data-name="Group 1" transform="translate(-754.49 -1477.71)">
+														<path id="R" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st0" d="M8.49-102.29H50.6a50.476,50.476,0,0,1,16.531,2.547A33.237,33.237,0,0,1,79-92.767,28.929,28.929,0,0,1,86.14-82.4a33.44,33.44,0,0,1,2.375,12.658,30.832,30.832,0,0,1-5.53,18.053,29.184,29.184,0,0,1-7.164,7.031,35.551,35.551,0,0,1-9.676,4.646L89.755.5H60.6L39.435-37.925h-5.15V.5H8.49ZM88.015-.5,64.642-40.608l.611-.181c13.94-4.13,22.262-14.955,22.262-28.956,0-19.163-14.488-31.545-36.91-31.545H9.49V-.5h23.8V-38.925h6.74L61.2-.5ZM33.285-81.7h15.87c4.629,0,8.21,1.194,10.643,3.548A10.8,10.8,0,0,1,62.43-74.03a15.524,15.524,0,0,1,.855,5.3c0,4.2-1.173,7.471-3.486,9.728-2.4,2.343-5.983,3.532-10.644,3.532H33.285Zm15.87,25.23c8.59,0,13.13-4.239,13.13-12.26,0-7.719-4.663-11.97-13.13-11.97H34.285v24.23Z" transform="translate(746 1580)" />
+														<path id="E" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st1" d="M8.49-102.29H71.84v20.865H34.285v19.59h33.2v20.14h-33.2v21.33H71.84V.5H8.49Zm62.35,1H9.49V-.5H70.84V-19.365H33.285v-23.33h33.2v-18.14h-33.2v-21.59H70.84Z" transform="translate(841 1580)" />
+														<path id="V" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st2" d="M68.793.5H37.057L.6-102.29h27.46L52.926-26.539,77.939-102.29h27.314Zm-31.03-1H68.087l35.75-100.79H78.661L52.924-23.341,27.333-101.29H2.013Z" transform="translate(920.032 1580)" />
+														<path id="I" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st3" d="M34.285.5H8.49V-102.29H34.285ZM9.49-.5H33.285V-101.29H9.49Z" transform="translate(1024.584 1580)" />
+														<path id="E-2" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st4" data-name="E" d="M8.49-102.29H71.84v20.865H34.285v19.59h33.2v20.14h-33.2v21.33H71.84V.5H8.49Zm62.35,1H9.49V-.5H70.84V-19.365H33.285v-23.33h33.2v-18.14h-33.2v-21.59H70.84Z" transform="translate(1069 1580)" />
+														<path id="W" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1" class="st5" d="M122.911.5H92.117L76.261-64.9,59.84.5H29.046L2.982-102.29H30.571L44.857-30.011,62.538-102.29H90.586L107.55-30.051l14.42-72.239h27.737ZM92.9-.5h29.235l26.274-100.79H122.79L108.08-27.6l-.977.016L89.794-101.29H63.322L45.291-27.576l-.976-.022L29.749-101.29H4.268L29.824-.5H59.06L75.785-67.112l.971,0Z" transform="translate(1147 1580)" />
+													</g>
+												</svg>
+												<div class="basic-box">
+													<h2>Web CMS 客製化後台</h2>
+													<div class="type">
+														<img src="https://img.icons8.com/fluent-systems-regular/24/ffffff/tag-window.png" />
+														<a>Sketch</a>
+														<small> | </small>
+														<a>Writeframe</a>
+														<small> | </small>
+														<a>UI / UX</a>
+														<small> | </small>
+														<a>SASS</a>
+														<small> | </small>
+														<a>JS</a>
+														<small> | </small>
+														<a>JQ</a>
+														<small> | </small>
+														<a>Github</a>
+													</div>
+												</div>
+												<div class="desc-box">
+													<h2>Description</h2>
+													<p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+												</div>
+												<img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/379fc485818529.5e13bcdbc7d25.jpg" alt="">
+												<p style="background: #000; margin: 0; padding: 60px 0; font-size: 18px;">Visual identity and art direction for RAJATON exhibition at Helsinki Design Week.</p>
+												<img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/22f43e85818529.5ddd4e4accab1.jpg" alt="">
+												<div class="spacer module-separator">
+													<div class="divider"></div>
+												</div>
+												<img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/2d232685818529.5e0f7341c5a61.jpg" alt="">
+												<div class="designer-box">
+													<p>UI/UX | Yooni</p>
+													<p>Front-End Developer | Yooni</p>
+
+												</div>
+											</div>
+										</div>
+										<div class="after-popup"></div>
+									</div>
+									<div class="page scroll">
+										<div class="page__container">
+											<a class="open-popup trigger">OPEN PROJECT</a>
+										</div>
+									</div>
+								</div>		
+								<div class='slideClone'>
+									<div class='title f'>
+										<br> From 2021.9 - 2021.10
+									</div>
+									<div class='image'>
+										<img
+											draggable='false'
+											src='images/proj05Out.png'
+										>
+										<div class='overlay'></div>
+										<div class='cats'>UI / UX Design & Front End & Sketch</div>
+										<div class='title'>Bulletin System</div>
+									</div>
+									<div
+										id="popup-article"
+										class="popup"
+									>
+										<div class="before-popup"></div>
+										<div class="popup__container">
+											<a
+												href="#"
+												class="popup__close"
+											></a>
+											<div class="popup__content">
+												<svg
+													id="draw"
+													version="1.1"
+													id="Layer_1"
+													xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink"
+													x="0px"
+													y="0px"
+													width="595.28px"
+													height="419.53px"
+													viewBox="0 0 595.28 419.53"
+													style="enable-background:new 0 0 595.28 419.53;"
+													xml:space="preserve"
+												>
+													<g
+														id="Group_1"
+														data-name="Group 1"
+														transform="translate(-754.49 -1477.71)"
+													>
+														<path
+															id="R"
+															fill="none"
+															stroke="rgba(255,255,255,.7)"
+															stroke-width="1"
+															class="st0"
+															d="M8.49-102.29H50.6a50.476,50.476,0,0,1,16.531,2.547A33.237,33.237,0,0,1,79-92.767,28.929,28.929,0,0,1,86.14-82.4a33.44,33.44,0,0,1,2.375,12.658,30.832,30.832,0,0,1-5.53,18.053,29.184,29.184,0,0,1-7.164,7.031,35.551,35.551,0,0,1-9.676,4.646L89.755.5H60.6L39.435-37.925h-5.15V.5H8.49ZM88.015-.5,64.642-40.608l.611-.181c13.94-4.13,22.262-14.955,22.262-28.956,0-19.163-14.488-31.545-36.91-31.545H9.49V-.5h23.8V-38.925h6.74L61.2-.5ZM33.285-81.7h15.87c4.629,0,8.21,1.194,10.643,3.548A10.8,10.8,0,0,1,62.43-74.03a15.524,15.524,0,0,1,.855,5.3c0,4.2-1.173,7.471-3.486,9.728-2.4,2.343-5.983,3.532-10.644,3.532H33.285Zm15.87,25.23c8.59,0,13.13-4.239,13.13-12.26,0-7.719-4.663-11.97-13.13-11.97H34.285v24.23Z"
+															transform="translate(746 1580)"
+														/>
+														<path
+															id="E"
+															fill="none"
+															stroke="rgba(255,255,255,.7)"
+															stroke-width="1"
+															class="st1"
+															d="M8.49-102.29H71.84v20.865H34.285v19.59h33.2v20.14h-33.2v21.33H71.84V.5H8.49Zm62.35,1H9.49V-.5H70.84V-19.365H33.285v-23.33h33.2v-18.14h-33.2v-21.59H70.84Z"
+															transform="translate(841 1580)"
+														/>
+														<path
+															id="V"
+															fill="none"
+															stroke="rgba(255,255,255,.7)"
+															stroke-width="1"
+															class="st2"
+															d="M68.793.5H37.057L.6-102.29h27.46L52.926-26.539,77.939-102.29h27.314Zm-31.03-1H68.087l35.75-100.79H78.661L52.924-23.341,27.333-101.29H2.013Z"
+															transform="translate(920.032 1580)"
+														/>
+														<path
+															id="I"
+															fill="none"
+															stroke="rgba(255,255,255,.7)"
+															stroke-width="1"
+															class="st3"
+															d="M34.285.5H8.49V-102.29H34.285ZM9.49-.5H33.285V-101.29H9.49Z"
+															transform="translate(1024.584 1580)"
+														/>
+														<path
+															id="E-2"
+															fill="none"
+															stroke="rgba(255,255,255,.7)"
+															stroke-width="1"
+															class="st4"
+															data-name="E"
+															d="M8.49-102.29H71.84v20.865H34.285v19.59h33.2v20.14h-33.2v21.33H71.84V.5H8.49Zm62.35,1H9.49V-.5H70.84V-19.365H33.285v-23.33h33.2v-18.14h-33.2v-21.59H70.84Z"
+															transform="translate(1069 1580)"
+														/>
+														<path
+															id="W"
+															fill="none"
+															stroke="rgba(255,255,255,.7)"
+															stroke-width="1"
+															class="st5"
+															d="M122.911.5H92.117L76.261-64.9,59.84.5H29.046L2.982-102.29H30.571L44.857-30.011,62.538-102.29H90.586L107.55-30.051l14.42-72.239h27.737ZM92.9-.5h29.235l26.274-100.79H122.79L108.08-27.6l-.977.016L89.794-101.29H63.322L45.291-27.576l-.976-.022L29.749-101.29H4.268L29.824-.5H59.06L75.785-67.112l.971,0Z"
+															transform="translate(1147 1580)"
+														/>
+													</g>
+												</svg>
+												<div class="basic-box">
+													<h2>Bulletin System 佈吿欄系統</h2>
+													<div class="type">
+														<img src="https://img.icons8.com/fluent-systems-regular/24/ffffff/tag-window.png" />
+														<a>Sketch</a>
+														<small> | </small>
+														<a>Writeframe</a>
+														<small> | </small>
+														<a>UI / UX</a>
+														<small> | </small>
+														<a>SASS</a>
+														<small> | </small>
+														<a>JS</a>
+														<small> | </small>
+														<a>JQ</a>
+														<small> | </small>
+														<a>Github</a>
+													</div>
+												</div>
+												<div class="desc-box">
+													<h2>Description</h2>
+													<p class="text">【負責此平台前端程式，UI/UX設計】<br>
+													- UI設計 / 網頁切版 / 整體設彩計畫 / 客製化後台介面 / 動態新增及刪除 / 會員登入及註冊 / 發布訊息 / 文章標籤設置 / 權限管理設定 / 會員分群設置<br>
+													- 使用者互動動態效果 / 轉場動畫<br>
+													- 視覺結合前端程式撰寫</p>
+												</div>
+												<img
+													src="images/pro05Inner.jpg"
+													alt=""
+												>
+												<div class="designer-box">
+													<p>UI/UX | Yooni</p>
+													<p>Front-End Developer | Yooni</p>
+
+												</div>
+											</div>
+										</div>
+										<div class="after-popup"></div>
+									</div>
+									<div class="page scroll">
+										<div class="page__container">
+											<a class="open-popup trigger">OPEN PROJECT</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 滑動 -->
+							<div class='portfolio_home__slider'>
+								<div class='slider_inner'>
+									<div class='slider_inner__slide'>
+										<div class='title'>
+											<span>01</span>
+											<br> From 2019 - 2020
+										</div>
+										<div class='image'>
+											<img draggable='false' src='images/proj01Out.png'>
+											<div class='overlay'></div>
+											<div class='cats'>UI / UX Design & Front End & Sketch</div>
+											<div class='title'>Dougo POS</div>
+											<div class='button'>
+												<a>View Project<span class="line"></span><span class="dot"></span></a>
+											</div>
+											<div class="cube__face cube__face--right"></div>
+											<div class="cube__face cube__face--top"></div>
+										</div>
+									</div>
+									<div class='slider_inner__slide'>
+										<div class='title'>
+											<span>02</span>
+											<br> From 2019 - 2020
+										</div>
+										<div class='image'>
+											<img draggable='false' src='images/proj02Out.jpg'>
+											<div class='overlay'></div>
+											<div class='cats'>UI / UX Design & Front End & Sketch</div>
+											<div class='title'>Dougo Park Shopping Website</div>
+											<div class='button'>
+												<a>View Project<span class="line"></span><span class="dot"></span></a>
+											</div>
+											<div class="cube__face cube__face--right"></div>
+											<div class="cube__face cube__face--top"></div>
+										</div>
+									</div>
+									<div class='slider_inner__slide'>
+										<div class='title'>
+											<span>03</span>
+											<br> From 2021.6 - 2021.8
+										</div>
+										<div class='image'>
+											<img draggable='false' src='images/proj03Out.jpg'>
+											<div class='overlay'></div>
+											<div class='cats'>UI / UX Design & Front End & Sketch</div>
+											<div class='title'>Portfolio Website</div>
+											<div class='button'>
+												<a>View Project<span class="line"></span><span class="dot"></span></a>
+											</div>
+											<div class="cube__face cube__face--right"></div>
+											<div class="cube__face cube__face--top"></div>
+										</div>
+									</div>
+									<div class='slider_inner__slide'>
+										<div class='title'>
+											<span>04</span>
+											<br> From 2020.11 - 2021.01
+										</div>
+										<div class='image'>
+											<img draggable='false' src='images/proj04Out.png'>
+											<div class='overlay'></div>
+											<div class='cats'>UI / UX Design & Front End & Sketch</div>
+											<div class='title'>Web CMS</div>
+											<div class='button'>
+												<a>View Project<span class="line"></span><span class="dot"></span></a>
+											</div>
+											<div class="cube__face cube__face--right"></div>
+											<div class="cube__face cube__face--top"></div>
+										</div>
+									</div>
+									<div class='slider_inner__slide'>
+										<div class='title'>
+											<span>04</span>
+											<br> From 2021.9 - 2021.10
+										</div>
+										<div class='image'>
+											<img
+												draggable='false'
+												src='images/proj05Out.png'
+											>
+											<div class='overlay'></div>
+											<div class='cats'>UI / UX Design & Front End & Sketch</div>
+											<div class='title'>Bulletin System</div>
+											<div class='button'>
+												<a>View Project<span class="line"></span><span class="dot"></span></a>
+											</div>
+											<div class="cube__face cube__face--right"></div>
+											<div class="cube__face cube__face--top"></div>
+										</div>
+									</div>
+									
+									
+
+									<div class='slider_inner__slide slider_contact__slide'>
+										<div class="big_contact">
+											<small>If you have any ideas, welcome to contact us !</small>
+											<a class="link main-link" href="contact.html">CONTACT<br>US !</a>
+											<span class="hover-container">
+												<!-- <span class="link-text" aria-hidden="true">CLICK ME !</span> -->
+												<span class="image-container">
+													<span class="image-inner">
+														<img class="link-image" src="images/arrow.png" />
+													</span>
+												</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<footer>
+								<small>oyoonig@gmail.com</small>
+								<small>Yooni©2021 Copyright. All Rights Reserved.</small>
+							</footer>
+						</div>
+					</div>
+					<hr>
+					<h1> Hello, I’m Yooni <span>Create a better user experience</span>
+					</h1>
+					<img class='trigger' src="https://img.icons8.com/material-rounded/24/232c3a/down.png" style="position: absolute; z-index: 99;">
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" ></script>
+	<script src="https://momentjs.com/static/js/core-home.js"></script>
+	<script type="text/javascript" src='js/menu.js'></script>
+	<script type="text/javascript" src='js/main.js'></script>
+</html>

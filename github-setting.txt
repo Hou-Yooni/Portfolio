@@ -1,9 +1,0 @@
-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
-
-git remote set-url origin https://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@github.com/2-Plus-1/2plus1.code.website.git
-
-git pull https://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@github.com/2-Plus-1/2plus1.code.website.git
-
-
-
-123
